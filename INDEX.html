@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Isaac</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Profile Header */
+        .profile-header {
+            margin-bottom: 20px;
+        }
+
+        .profile-picture img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+        }
+
+        .social-icons img {
+            width: 30px;
+        }
+
+        /* Product Section */
+        .product-section {
+            margin-top: 20px;
+        }
+
+        .product a {
+            text-decoration: none; /* Sin subrayado para el enlace */
+            color: inherit; /* Mantiene el color del texto original */
+        }
+
+        .product {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            padding: 15px;
+            border-radius: 8px;
+            flex-direction: column; /* Para apilar verticalmente en pantallas pequeñas */
+            transition: background-color 0.3s ease;
+        }
+
+        .product:hover {
+            background-color: #444; /* Cambia el color de fondo al pasar el mouse */
+        }
+
+        .product img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .product-info h2 {
+            font-family: 'Century Gothic', sans-serif; /* Cambia la fuente a Century Gothic */
+            font-size: 35px; /* Aumenta el tamaño de la fuente */
+            color: #FFA500; /* Naranja */
+        }
+
+        .product-info p {
+            font-size: 14px;
+            color: #fff;
+        }
+
+        /* External Links (Ads) */
+        .external-links {
+            margin-top: 20px;
+        }
+
+        .external-links img {
+            width: 30px;
+        }
+
+        /* Responsiveness */
+        @media (min-width: 600px) {
+            .product {
+                flex-direction: row; /* Apila horizontalmente en pantallas más grandes */
+            }
+
+            .product img {
+                margin-right: 10px;
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <div class="profile-header">
+            <div class="profile-picture">
+                <img src="prueba.jpg" alt="Foto de perfil">
+            </div>
+            <h1>¡Bienvenidos al taller de Fidalgo!</h1>
+            <p>Aquí encontrarás todos los productos que utilizo.</p>
+            <!-- Social Icons -->
+            <div class="social-icons">
+                <a href="https://www.instagram.com/eltallerdefidalgo/?hl=es" target="_blank"><img src="instagram_logo.png" alt="Instagram"></a>
+                <a href="https://www.tiktok.com/@eltallerdefidalgo" target="_blank"><img src="tiktok_logo.png" alt="TikTok"></a>
+            </div>
+        </div>
+
+        <!-- Product Section -->
+        <div class="product-section">
+            <a href="https://mercadolibre.com/sec/233Dw2P" target="_blank">
+                <div class="product">
+                    <img src="cambiar-nombre.jpg" alt="Producto Aspiradora Bissel">
+                    <div class="product-info">
+                        <h2>ASPIRADORA BISSEL</h2>
+                        <p>Aspiradora Bissel ProHeat Portátil</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- External Links (Ads) -->
+        <div class="external-links">
+            <a href="#"><img src="ads-icon.png" alt="Publicidad"></a>
+        </div>
+    </div>
+
+</body>
+</html>

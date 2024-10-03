@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Profile Header */
+.profile-header {
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+}
+
+/* Product Section */
+.product-section {
+    margin-top: 20px;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    flex-direction: column; /* Para apilar verticalmente en pantallas pequeñas */
+}
+
+.product img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.product-info h2 {
+    font-size: 20px;
+    color: #FFA500;
+}
+
+.product-info p {
+    font-size: 14px;
+    color: #fff;
+}
+
+/* External Links (Ads) */
+.external-links {
+    margin-top: 20px;
+}
+
+.external-links img {
+    width: 30px;
+}
+
+/* Responsiveness */
+@media (min-width: 600px) {
+    .product {
+        flex-direction: row; /* Apila horizontalmente en pantallas más grandes */
+    }
+
+    .product img {
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+}
